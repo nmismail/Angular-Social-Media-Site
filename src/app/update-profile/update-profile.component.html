@@ -1,0 +1,44 @@
+<div class="row">
+  <div class="container">
+    <div class="col col-sm-6">
+      <img id="image" [src]="this.user.picture" style="width: 150px; height: 150px" />
+      <input type="file" class="uploadfile" (change)="selectedPicture($event)">
+
+      <h1>{{ user.firstname }} {{ user.lastname }}</h1>
+      <div class="leftstuff">
+        <h3>Email: </h3>
+        <input id="email" type="email" [(ngModel)]="user.email" placeholder="Enter Email" class="form-control input-md" />
+        <h3>Date of Birth:</h3>
+        <input id="dob" type="text" [(ngModel)]="user.dob" placeholder="Enter dob" class="form-control input-md" />
+        <button class="btn save" id="changePassword" (click)='changePassword()'>Change Password</button>
+
+      </div>
+    </div>
+    <div class="col col-sm-6">
+      <div class="rightstuff">
+        <h3>Bio:</h3>
+        <textarea id="bio" type="text" [(ngModel)]="user.bio" placeholder="Enter bio" class="form-control input-md" rows="3"></textarea>
+
+        <h3>Favorite Genres:</h3>
+        <input id="genreOne" type="text" [(ngModel)]="user.genreOne" placeholder="Enter genreOne" class="form-control input-md" />
+        <input id="genreTwo" type="text" [(ngModel)]="user.genreTwo" placeholder="Enter genreTwo" class="form-control input-md" />
+        <input id="genreThree" type="text" [(ngModel)]="user.genreThree" placeholder="Enter genreThree" class="form-control input-md"
+        />
+        <button class="btn cancel" [routerLink]="['/home/profile', user.userId]">Cancel</button>
+        <button class="btn save" id="saveUser" (click)='saveUser()'>Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id = "changePasswordThing" class = "modal">
+    <div class="container passwordchanging">
+    <h3>New Password: </h3>
+    <input id="password" type="password" [(ngModel)]="password" class="form-control input-md" />
+    <h3>Confirm Password: </h3>
+    <input id="passwordConfirm" type="password" [(ngModel)]="passwordConfirm" class="form-control input-md" />
+
+    <button class="btn cancelsecond" id="cancel" (click)='cancel()'>Cancel</button>
+    <button class="btn save" id="savePassword" (click)='savePassword()'>Save</button>
+  </div>
+  </div>

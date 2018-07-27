@@ -1,0 +1,67 @@
+ <div style="text-align:center">
+
+      
+      <div class="middlePage"> 
+          <div class="HeaderLogoWrapper">
+              <div class="HeaderLogo">
+          <img src="https://image.ibb.co/gmmhEJ/finallogo.png" width="300px" position="">
+          </div>
+          </div>
+      </div>
+
+      <div class="col-xs-offset-3 col-xs-6">
+        <br>
+        <br>
+        <br>
+        <br/><br/><br/><br/><br/><br/><br/>
+      <div class="panel panel-dark" >
+        <div class="panel-heading">
+          <h3 class="panel-title">Please Sign In</h3>
+        </div>
+        <div class="panel-body">
+
+          <div class="row">
+
+            <div class="col-md-5">
+              <br>
+              <img src="https://image.ibb.co/dGiijT/favicon.png"
+                height="100px" width="100px" />
+
+            </div>
+
+            <div class="col-md-7" style="border-left:1px solid #ccc;height:160px">
+
+              <fieldset>
+
+                <input id="email" type="text" [(ngModel)]="email" placeholder="Enter E-mail" class="form-control input-md"/>
+                <br>
+                <input id="password" type="password" [(ngModel)]="password" placeholder="Enter Password" class="form-control input-md"/>
+                <div class="spacing">
+                  <a routerLink='/forgot-password'>
+                    Forgot Password?
+                  </a>
+                  <br/>
+                </div>
+                <button id="signIn" (click) = 'clickedLogin()' class="btn btn-lrg pull-right" style="font-size : 14px">Sign In</button>
+                <a routerLink= '/register' class="btn btn-lrg pull-left"style="font-size : 14px">REGISTER</a>
+
+              </fieldset>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div> 
+  </div>
+  
+<!-- <div class='embed-container'>
+    <iframe src='https://embed.spotify.com/?uri=spotify:track:24lMtPOCzP5g4hrg3NklLa' frameborder='0' allowtransparency='true'></iframe>
+</div>
+
+
+
+<iframe src="https://open.spotify.com/embed?uri=spotify:album:2o9McLtDM7mbODV7yZF2mc" width="300" height="380" frameborder="0"
+    allowtransparency="true" allow="encrypted-media"></iframe> -->

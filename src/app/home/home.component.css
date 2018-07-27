@@ -1,0 +1,144 @@
+.body{
+    background-image: url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/JrbItQz/abstract-geometric-background-triangles-and-lines-loop-4k-4096x2304_ekm8_sfzx__F0000.png);
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+    position:relative;
+    right:0px;
+    background-size: cover;
+}
+#logo{
+    position: absolute;
+    background-color: #010F0F;
+    top:0px;
+    left:15.5%;
+    width:1100px;
+    height:12%;
+}
+.logoimage{
+    position: relative;
+    top:-105px;
+    left:27%;
+    text-align: center;
+}
+.container{
+    background-color: #010F0F;
+    height: 100vh;
+    width: 20%;
+    margin-left: 0%;
+}
+
+.navbar{
+    background-color: #010F0F;
+}
+.row{
+    margin-left: 0%;
+    width: 62%;
+}
+.scrollable-content {
+      background-color: #ffffff;
+      height: 100vh;
+      width: 895px;
+      overflow-y: auto;
+      text-indent: 20px;
+  }
+.profile{
+    color:white;
+    width: 145px;
+    position: relative;
+    top:2%;
+    left:37%;
+    font-size: 18px;
+}
+
+.h5, h5 {
+    font-size: 22px;
+}
+
+.container-fluid{
+    position: relative;
+    left:-25%;
+}
+.feed{
+    position: absolute;
+    top:130px;
+    left:285px;
+}
+
+i{
+    font-size: 24px;
+    text-align: center;
+}
+
+.fa{
+    width:80%;
+}
+img{
+    position: relative;
+    border-radius: 15px 15px 15px 15px;
+-moz-border-radius: 15px 15px 15px 15px;
+-webkit-border-radius: 15px 15px 15px 15px;
+margin-top: 10%;
+margin-left: 13%;
+
+
+}
+.profileIcon{
+    background-color: white;
+    border-radius: 15px 15px 15px 15px;
+    -moz-border-radius: 15px 15px 15px 15px;
+    -webkit-border-radius: 15px 15px 15px 15px;
+    border: 2px solid #000000;
+    position: relative;
+    top:-15px;
+    left:30px;
+
+}
+.icon-bar {
+    width: 100%;
+    height:65%;
+    background-color: #010F0F; 
+    border-radius: 15px 15px 15px 15px;
+    -moz-border-radius: 15px 15px 15px 15px;
+    -webkit-border-radius: 15px 15px 15px 15px;
+    border: 8px none #000000;
+}
+.icon-bar a {
+    display: block; /* Make the links appear below each other instead of side-by-side */
+    text-align: center; /* Center-align text */
+    padding-bottom: 8px; /* Add some padding */
+    padding-top: 8px;
+    padding-left: 2px;
+    padding-right: 2px;
+    transition: all 0.3s ease; /* Add transition for hover effects */
+    color: white; /* White text color */
+    font-size: 26px; /* Increased font-size */
+    border-radius: 15px 15px 15px 15px;
+-moz-border-radius: 15px 15px 15px 15px;
+-webkit-border-radius: 15px 15px 15px 15px;
+border: 8px none #000000;
+}
+.icon-bar a:hover {
+    background-color: #1FD860 ; /* Add a hover color */
+}
+.active {
+    background-color: #1FD860 /* Add an active/current color */
+}
+#chordination{
+    background-color: #82b74b;
+}
+.break{
+    background-color: #82b74b;
+} 
+.profileIcon {
+    position: relative;
+    right: -20px;
+    top: 20px;
+    
+}
+p {
+    font-size: 14px;
+}
+

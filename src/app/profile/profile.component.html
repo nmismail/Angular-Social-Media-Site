@@ -1,0 +1,56 @@
+<div *ngIf="user">
+  <div class="container-fluid" id="wholeprofile">
+    <div class="row" align="left">
+      <div *ngIf="user">
+        <br/>
+        <img id="profile" style="height: 250px; width: 250px; margin-left: 162%" [src]="this.user.picture" />
+
+        <h1>{{ user.firstname }} {{ user.lastname }}</h1>
+        <h3 id="useremail">Email: {{ user.email }}</h3>
+        <h3 id="userdob">Date of Birth: {{ user.dob }}</h3>
+      </div>
+      <div class="userbio">
+        <div *ngIf="user.bio">
+          <h3>Bio:</h3>
+          <p>{{ user.bio }}</p>
+        </div>
+      </div>
+      <div class="genre">
+        <h3>Favorite Genres:</h3>
+        <h6> {{ user.genreOne }}</h6>
+        <div *ngIf="user.genreTwo !== 'null'">
+          <h6> {{ user.genreTwo }}</h6>
+        </div>
+        <div *ngIf="user.genreThree !== 'null'">
+          <h6> {{ user.genreThree }}</h6>
+        </div>
+      </div>
+      <div *ngIf="isMyProfile">
+        <button class="btn" routerLink="/home/update-profile">Edit Profile</button>
+      </div>
+      <hr/>
+      <div class='embed-container'>
+        <iframe src='https://embed.spotify.com/?uri=spotify:track:6DCZcSspjsKoFjzjrWoCdn' frameborder='0' allowtransparency='true' style= 'width:800px' ></iframe>
+      </div>
+      <h4 id="heading">Recent Posts:</h4>
+      <br/>
+      <div class='container-fluid' id="posts">
+        <div *ngFor='let post of posts'>
+          <div class="name">
+            <span>{{post.author.firstname}} {{post.author.lastname}}</span>
+          </div>
+          <p class="description">{{post.description}}</p>
+          <br/>
+          <div class="image">
+              <span *ngIf="post.picture !== 'undefined'">
+                  <img [src]="post.picture" class="img"/>
+              </span>
+          </div>
+          <h5 class="date">{{getDate(post.submitTime)}}</h5>
+          <br/>
+        </div>
+        <br/>
+      </div>
+    </div>
+  </div>
+</div>

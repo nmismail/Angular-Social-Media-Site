@@ -1,0 +1,60 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Home</title>
+<!-- Bootstrap CSS CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+  crossorigin="anonymous">
+<!-- Font Awesome JS -->
+<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+  crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+  crossorigin="anonymous"></script>
+
+<body class="body">
+  <div class="row">
+    <div class="container">
+        <img [src]="this.user.picture" width="100px" (click) = 'redirect()'>
+      <div class="profile">
+        <div class="container-fluid">
+          <h5 id="firstname">{{user.firstname}} {{user.lastname}}</h5>
+        </div>
+      </div>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <div class="icon-bar">
+        <br/>
+        <br/>
+        <a routerLink="/home">
+          <i class="fa fa-home"> Home</i>
+        </a>
+        <br/>
+        <a [routerLink]="['profile', user.userId]">
+          <i class="fa fa-user-circle"> Profile </i>
+        </a>
+        <br/>
+        <a routerLink="friends">
+          <i class="fa fa-group"> Friends</i>
+        </a>
+        <br/>
+        <a routerLink="spotify">
+        <!-- <a href="https://open.spotify.com/browse/featured?_ga=2.243317580.855895022.1532401492-1507487166.1528673766"> -->
+          <i class="fa fa-spotify"> Spotify</i>
+        </a>
+        <br/>
+        <a (click)="clickedLogout()">
+          <i class="fa fa-close"> Logout</i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="feed">
+    <router-outlet></router-outlet>
+  </div>
+  <div class="container" id="logo">
+    <img class="logoimage" src="https://image.ibb.co/gmmhEJ/finallogo.png" width="210px">
+  </div>
+
+</body>

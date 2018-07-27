@@ -1,0 +1,68 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+font-family: 'Raleway', sans-serif;
+}
+
+img{
+    border-radius: 15px 15px 15px 15px;
+-moz-border-radius: 15px 15px 15px 15px;
+-webkit-border-radius: 15px 15px 15px 15px;
+border: 8px none #000000;
+}
+
+a {
+    color: rgb(255, 255, 255);
+  }
+
+
+p {
+	color:rgb(0, 0, 0);
+}
+
+.spacing {
+	padding-top:7px;
+	padding-bottom:7px;
+}
+.middlePage {
+	
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-image: url(https://www.wallpaperup.com/uploads/wallpapers/2015/03/05/632675/6c427c1fe6afdc9d22eab0ab907c0f0c-700.jpg);
+    
+}
+.panel{
+    background-color: #010F0F;
+    color: white;
+    border-radius: 20px 20px 20px 20px;
+-moz-border-radius: 20px 20px 20px 20px;
+-webkit-border-radius: 20px 20px 20px 20px;
+border: 4px solid #E5CA89;
+}
+.logo {
+	color:rgb(255, 255, 255);
+}
+.btn{
+    background-color: 	#1FD860;
+}
+
+input {
+    font-size:15px;
+}
+
+button {
+    font-size: 10px;
+}
+
+.spacing {
+    font-size: 11px;
+}
+
+.panel-heading{
+    padding-left: 265px;
+}

@@ -1,0 +1,70 @@
+
+<div class="middlePage">
+    <br/>
+  <div class="container">
+    <div class="col-sm-6">
+      <div class="insides">
+        <br/>
+        <h1 id="heading">Register</h1>
+        <p>Please fill in this form to create an account.</p>
+        <hr>
+       
+        <label for="firstname">
+          <b>First Name</b>
+        </label>
+        <input type="text" id="text_field1" class="register" placeholder="First Name" name="firstname" [(ngModel)]="firstname" required>
+
+        <label for="lastname">
+          <b>Last Name</b>
+        </label>
+        <input type="text" id="text_field2" class="register" placeholder="Last Name" name="lastname" [(ngModel)]="lastname" required>
+
+        <label for="email">
+          <b>Email</b>
+        </label>
+        <input type="text" id="text_field3" class="register" placeholder="Email" name="email" [(ngModel)]="email" required>
+
+        <label for="dob">
+          <b>Date of Birth </b>
+        </label>
+        <br>
+        <input style="background-color: #F1F1F1" type="date" class="register" id="text_field4" placeholder="Date of Birth" name="dob" [(ngModel)]="dob" required>
+
+        <br>
+        <br>
+        <label for="psw">
+          <b>Password</b>
+        </label>
+        <input type="password" class="register" id="text_field5" placeholder="Enter Password" name="psw" [(ngModel)]="password" required>
+
+        <label for="psw-repeat">
+          <b>Confirm Password</b>
+        </label>
+        <input type="password" class="register" id="text_field6" placeholder="Confirm Password" name="psw-repeat" [(ngModel)]="confirm" required>
+
+        <h3>Please pick at least one music genre.</h3>
+        <br/>
+        <label for="genre1">
+          <b>First Genre</b>
+        </label>
+        <input type="text" class="register" id="text_field7" placeholder="Genre" name="genre1" [(ngModel)]="genreOne" required="required">
+
+        <label for="genre2">
+          <b>Second Genre</b>
+        </label>
+        <input type="text" class="register" id="text_field8" placeholder="Genre" name="genre2" [(ngModel)]="genreTwo">
+        <label for="genre3">
+          <b>Third Genre</b>
+        </label>
+        <input type="text" class="register" id="text_field9" placeholder="Genre" name="genre3" [(ngModel)]="genreThree">
+        <button type="submit" id="submit_button" class="registerbtn" (click) = 'clickedRegister()'>Register</button>
+        <p>Already have an account?
+            <a routerLink='/login'>Sign in</a></p>
+          
+      </div>
+    </div>
+  </div>
+  <br/>
+
+
+</div>
